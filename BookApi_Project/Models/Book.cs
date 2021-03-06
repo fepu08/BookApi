@@ -11,5 +11,6 @@ namespace BookApi_Project.Models
         public string Isbn { get; set; }
         public string Title { get; set; }
         public DateTime DatePublished { get; set; }
+        public virtual ICollection<Review> Reviews { get; set; }
     }
 }
